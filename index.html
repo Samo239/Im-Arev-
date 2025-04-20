@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <title>Սա քեզ իմ արև❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+    #startScreen, #poemScreen {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    .visible {
+      display: flex;
+    }
+    .heart {
+      font-size: 60px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .heart:hover {
+      transform: scale(1.2);
+    }
+    .poem-line {
+      margin: 8px 0;
+    }
+    .colored {
+      color: #e91e63;
+    }
+    footer {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #880e4f;
+    }
+    .hearts {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="startScreen" class="visible">
+    <h2>Կտտացրու սրտիկին, եթե պատրաստ ես զգալ լույսը</h2>
+    <div class="heart" onclick="showPoem()">❤️</div>
+  </div>
+
+  <div id="poemScreen">
+    <div class="hearts">❤️❤️❤️</div>
+    <div id="poemText">
+      <p class="poem-line">Դու շողում ես արևի պես</p>
+      <p class="poem-line colored">Ձայնդ մեղմիկ սոխակի պես</p>
+      <p class="poem-line">Լույսով դու միշտ շողշողում</p>
+      <p class="poem-line">Արևին ես հեռու վանում</p>
+      <p class="poem-line colored">Եթե դու կաս, էլ ի՞նչ արև,</p>
+      <p class="poem-line">Աշխարհին քո փայլող շողքով</p>
+      <p class="poem-line">Լույս ես տալիս ու ջերմացնում</p>
+      <p class="poem-line">Իսկ ա՞րևը, արևը միշտ</p>
+      <p class="poem-line">Լույս է տալիս առավոտից</p>
+      <p class="poem-line">Իսկ գիշերը այն կորում է</p>
+      <p class="poem-line">Ոչ թե քո պես պահպանվում է</p>
+      <p class="poem-line">Դու հավետ ես ինձ լույս տալիս</p>
+      <p class="poem-line">Իսկ արևը գալիս գնում</p>
+      <p class="poem-line">Անսպասելի անհետանում</p>
+      <p class="poem-line">Իսկ գիշերը նրա տեղը</p>
+      <p class="poem-line">Ինչ-որ բան է հեռվում շողում</p>
+      <p class="poem-line">Դա լուսինն է, որը եկավ</p>
+      <p class="poem-line">Որ փոխանցի նոր ջերմություն</p>
+      <p class="poem-line">Սակայն նա էլ նույնիսկ գիտի</p>
+      <p class="poem-line">Որ չի կարող քեզ հետ մրցի</p>
+      <p class="poem-line">Դրա համար, գալիս գնում</p>
+      <p class="poem-line">Առավոտն է անհետանում</p>
+      <p class="poem-line">Տարիներն են անցնում գնում</p>
+      <p class="poem-line">Իսկ դու նույնիսկ երբ քնում ես</p>
+      <p class="poem-line">Շողքդ լուսնին փոխանցում ես</p>
+      <p class="poem-line">Որ գիշերը բոլոր մարդիկ</p>
+      <p class="poem-line">Ապրեն խաղաղ, լինեն հանգիստ</p>
+      <p class="poem-line">Ու չիմանան շողքիդ մասին</p>
+      <p class="poem-line">Իմանան թե այդ լուսինն է</p>
+      <p class="poem-line">Իրենց պահում ու պահպանում</p>
+      <p class="poem-line">Մենակ ես եմ որ գիտեմ դա</p>
+      <p class="poem-line">Որ քո լույսն է ինձ ուժ տալիս</p>
+      <p class="poem-line">Լինի լուսին, լինի արև</p>
+      <p class="poem-line">Քո լույսով է կյանքս լցվում</p>
+      <p class="poem-line">Ջերմ էներգիա ինձ փոխանցվում</p>
+      <p class="poem-line">Եղանակն է նույնիսկ անզոր</p>
+      <p class="poem-line">Լինի ձմեռ թե միշտ ամառ</p>
+      <p class="poem-line">Ինչքան էլ այն լինի համառ</p>
+      <p class="poem-line">Լինելով դու հավետ կայտառ</p>
+      <p class="poem-line">Արևից էլ լինելով վառ</p>
+      <p class="poem-line">Դուրս ես մղում այս բոլորին</p>
+      <p class="poem-line">Դառնալով դու մի եղանակ</p>
+      <p class="poem-line">Վերածվելով հանելուկի</p>
+      <p class="poem-line">Որը ունի շատ մեծ գաղտնիք</p>
+      <p class="poem-line">Իմ ութերորդ հրաշալիք</p>
+      <p class="poem-line">Գուցե մի օր աչքդ փակես</p>
+      <p class="poem-line">Քեզ միայնակ պատկերացնես</p>
+      <p class="poem-line">Բայց հավատա որ քո կողքին</p>
+      <p class="poem-line">Կա մի ամուր, հզոր տանիք</p>
+      <p class="poem-line">Ով ամեն պահ, ամեն վայրկյան</p>
+      <p class="poem-line">Քեզ կստիպի աչքդ բացես</p>
+      <p class="poem-line">Ու շուրջը քո լույսով լցնես</p>
+      <p class="poem-line">Չեմ թողնի քեզ ես միայնակ</p>
+      <p class="poem-line">Որքան էլ դու լինես մենակ</p>
+      <p class="poem-line">Դա մի պահ է, որը կանցնի</p>
+      <p class="poem-line">Ու երբ շողքս քեզ փոխանցվի</p>
+      <p class="poem-line">Կզգաս մի ուժ, որը հավետ</p>
+      <p class="poem-line">Քո հետ կլնի միշտ՝ առհավետ</p>
+      <p class="poem-line">Երկրորդ աչքդ եթե փակես</p>
+      <p class="poem-line">Այդ ժամանակ գուցե փոխվես</p>
+      <p class="poem-line">Այս աշխարհին այլ կերպ նայես</p>
+      <p class="poem-line">Ու վերջապես դու ընդունես</p>
+      <p class="poem-line">Ինձնից բացի ուրիշ ոչ ոք</p>
+      <p class="poem-line">Քեզ չի կարող երջանկացնել</p>
+      <p class="poem-line">Ու ջերմագին խոսքերով լի</p>
+      <p class="poem-line">Ամեն օրդ տոն դարձնել</p>
+      <p class="poem-line">Դու մի փոխվի մնա նույնը</p>
+      <p class="poem-line">Բայց միշտ հիշի ու ընդունի</p>
+      <p class="poem-line">Որ քո, հենց քո բարությունը</p>
+      <p class="poem-line">Կփոխի այս դատարկ կյանքը</p>
+      <p class="poem-line">Նոր շունչ կտա այս աշխարհին</p>
+      <p class="poem-line">Էլ չեն լինի անարդարներ</p>
+      <p class="poem-line">Էլ չի լինի չար ու բարի</p>
+    </div>
+    <div class="hearts">❤️❤️❤️</div>
+    <footer>Սամի կողմից իր արևին</footer>
+  </div>
+
+  <script>
+    function showPoem() {
+      document.getElementById("startScreen").classList.remove("visible");
+      document.getElementById("poemScreen").classList.add("visible");
+    }
+  </script>
+</body>
+</html>
